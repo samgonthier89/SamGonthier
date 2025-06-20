@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Duelists of the First Age</title>
+  <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="scratch.html">Scratch Page</a></li>
+    </ul>
+  </nav>
+
+  <!-- Character Selection -->
+  <section id="game" class="game-container">
+    <h1>Duelists of the First Age</h1>
+    <div id="char-buttons"></div>
+    <p>Select Your Character. First player selects a character, then second player picks another!
+     Have fun!!
+    </p>
+
+    <!-- Images -->
+    <div class="images">
+      <img id="img1" class="char-img" src="" alt="">
+      <img id="img2" class="char-img" src="" alt="">
+    </div>
+
+    <!-- Game Actions -->
+    <div id="battle" style="display:none;">
+      <h2 id="turnDisplay"></h2>
+      <p><strong><span id="name1"></span></strong> HP: <span id="hp1"></span></p>
+      <p><strong><span id="name2"></span></strong> HP: <span id="hp2"></span></p>
+      <button onclick="attack()">Attack</button>
+      <button onclick="heal()">Heal</button>
+    </div>
+
+    <!-- Log and Reset -->
+    <div id="log"></div>
+    <button id="playAgain" style="display:none;" onclick="resetGame()">Play Again</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
